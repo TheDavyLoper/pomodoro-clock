@@ -1,0 +1,59 @@
+.app-title {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  text-shadow: 0px 4px 3px #033, 0px 8px 13px #033;
+}
+
+.length-ctrl-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin-top: 6rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #00f2f3;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 720px) {
+  .time {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .length-ctrl-box {
+    margin-bottom: 2rem;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
